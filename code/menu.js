@@ -55,8 +55,8 @@ async function show_me(){
         if (lat && long ) {
             // En "const" variabel som plasserer markøren iforhold til verdiene til "lat" og "long"
             const marker = L.marker([lat,long],{icon:point}).addTo(map)
-            // Lager en poppup som hvis man holder musa over viser ett bryggeri, denne poppupen viser informasjon om landet, navnet og staten bryggeriet ligger i
-            marker.bindPopup(`<p>Country:${element.country}<p>Name:${element.name}<p>State:${element.state}`)
+            // Lager en poppup som hvis man holder musa over viser ett bryggeri, denne poppupen viser informasjon om landet, navnet, staten bryggeriet ligger i, adresse og nettsiden til bryggeriet
+            marker.bindPopup(`<p>Land: ${element.country}<p>Navn: ${element.name}<p>State: ${element.state}<p>Adresse: ${element.adress}</p>Nettside: <a href=${element.website_url} target="_blank">${element.website_url}</a>`)
         }
     });
 }

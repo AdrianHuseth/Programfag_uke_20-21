@@ -15,16 +15,21 @@ body{
     "footer footer footer";
 
 }
+body{
+    background-color: #ffc40c;
+}
 .header_main{
     grid-area: header;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    background-color: #d8d8d8;
+    background-color: #ffffff;
     align-items: center;
 }
 .header_main #menu_header{
     grid-column: 1;
+    margin-left: 24vh;
+    font-size: 40px;
 }
 .header_main #menu_header ul{
     display: flex;
@@ -67,9 +72,10 @@ body{
 
 .sidebar{
     grid-area: sidebar;
-    background-color:#c1c0be;
+    background-color:#1f1d1b;
     padding: 5rem 7rem;
     align-items: center;
+    color: white;
 }
 
 .sidebar #sidebar_options ul{
@@ -95,14 +101,10 @@ body{
 
 }
 .main_main #map1{
-   
-
     height: 40%;
     width: auto;
     margin-left: 10%;
     aspect-ratio: 1/1;
-
-    
 
 }
 .main_main #map iframe{
@@ -159,7 +161,7 @@ body{
     padding:2rem 0 2rem 0;
 
 }
-footer{
+/* footer{
     grid-area: footer;
     background-color:#d8d8d8;;
     padding: 1rem;
@@ -170,12 +172,12 @@ footer{
     color: #000;
 }
 footer #info1 ul, #info2 ul{
-    list-style: none;
+    list-style: none; */
     
+/* } */
+.øllvenner{
+    width: 200px;
 }
-
-
-
 
 
 
